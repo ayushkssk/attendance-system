@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Profile</title>
+    
+    <!-- Include same header links as index.html -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/components/modal.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+</head>
+<body>
+    <!-- Include same side menu as index.html -->
+    <div class="side-menu" id="sideMenu">
+        <!-- Same side menu content -->
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-cover">
+                        <button class="edit-cover-btn">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <div class="profile-avatar-container">
+                        <img src="assets/images/default-profile.png" alt="Profile" class="profile-avatar" id="profileAvatar">
+                        <button class="edit-avatar-btn">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <div class="profile-basic-info">
+                        <h1 class="profile-name" data-field="fullName">John Doe</h1>
+                        <p class="profile-designation" data-field="designation">Software Engineer</p>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="profile-section">
+                        <h2>Personal Information</h2>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <label>Employee ID</label>
+                                <div class="info-value" data-field="employeeId">EMP001</div>
+                            </div>
+                            <div class="info-item">
+                                <label>Department</label>
+                                <div class="info-value" data-field="department">Technology</div>
+                            </div>
+                            <div class="info-item">
+                                <label>Email</label>
+                                <div class="info-value" data-field="email">john.doe@company.com</div>
+                            </div>
+                            <div class="info-item">
+                                <label>Phone</label>
+                                <div class="info-value" data-field="phone">+1 234 567 8900</div>
+                            </div>
+                            <div class="info-item">
+                                <label>Date of Birth</label>
+                                <div class="info-value" data-field="dob">1990-01-01</div>
+                            </div>
+                            <div class="info-item">
+                                <label>Location</label>
+                                <div class="info-value" data-field="location">New York, USA</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-section">
+                        <h2>Work Information</h2>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <label>Joining Date</label>
+                                <div class="info-value" data-field="joiningDate">2022-01-01</div>
+                            </div>
+                            <div class="info-item">
+                                <label>Manager</label>
+                                <div class="info-value" data-field="manager">Jane Smith</div>
+                            </div>
+                            <div class="info-item">
+                                <label>Team</label>
+                                <div class="info-value" data-field="team">Frontend Development</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-section">
+                        <h2>Skills & Expertise</h2>
+                        <div class="skills-container" id="skillsContainer">
+                            <!-- Skills will be added dynamically -->
+                        </div>
+                        <button class="add-skill-btn" id="addSkillBtn">
+                            <i class="fas fa-plus"></i> Add Skill
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Profile Modal -->
+    <div class="modal" id="editProfileModal">
+        <div class="modal-content">
+            <h2>Edit Profile</h2>
+            <form id="editProfileForm">
+                <!-- Form fields will be added dynamically -->
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/utils/validation.js"></script>
+    <script src="js/utils/notifications.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html> 

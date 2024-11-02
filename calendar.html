@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calendar</title>
+    
+    <!-- Include same header links -->
+    <link rel="stylesheet" href="css/calendar.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="container">
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <div class="calendar-navigation">
+                        <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                        <h2 id="currentMonth">September 2024</h2>
+                        <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="calendar-legend">
+                        <div class="legend-item">
+                            <span class="legend-color present"></span>
+                            <span>Present</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color absent"></span>
+                            <span>Absent</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color leave"></span>
+                            <span>Leave</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color holiday"></span>
+                            <span>Holiday</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calendar-grid" id="calendarGrid">
+                    <!-- Calendar will be generated here -->
+                </div>
+
+                <div class="attendance-summary">
+                    <div class="summary-item">
+                        <span class="summary-label">Present Days</span>
+                        <span class="summary-value" id="presentDays">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Absent Days</span>
+                        <span class="summary-value" id="absentDays">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Leave Days</span>
+                        <span class="summary-value" id="leaveDays">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Holidays</span>
+                        <span class="summary-value" id="holidays">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

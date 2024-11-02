@@ -1,0 +1,113 @@
+.profile-card {
+    background: var(--card-background);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.profile-header {
+    position: relative;
+    text-align: center;
+}
+
+.profile-cover {
+    height: 200px;
+    background: var(--gradient-1);
+    position: relative;
+}
+
+.profile-avatar-container {
+    position: relative;
+    margin-top: -75px;
+    display: inline-block;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--card-background);
+    object-fit: cover;
+}
+
+.edit-avatar-btn,
+.edit-cover-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.profile-basic-info {
+    padding: 20px;
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.profile-designation {
+    color: var(--primary-color);
+    margin: 5px 0;
+}
+
+.profile-content {
+    padding: 20px;
+}
+
+.profile-section {
+    margin-bottom: 30px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.info-item {
+    position: relative;
+}
+
+.info-item label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    font-size: 1rem;
+    color: var(--text-color);
+    padding: 5px 0;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.skill-tag {
+    background: var(--gradient-2);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

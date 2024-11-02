@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Dashboard</title>
+    
+    <!-- Include same header links -->
+    <link rel="stylesheet" href="css/team.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="container">
+            <div class="team-dashboard">
+                <!-- Team Overview Section -->
+                <div class="team-overview">
+                    <h2>Team Overview</h2>
+                    <div class="team-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-users"></i>
+                            <div class="stat-info">
+                                <span class="stat-value" id="totalMembers">0</span>
+                                <span class="stat-label">Team Members</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-user-check"></i>
+                            <div class="stat-info">
+                                <span class="stat-value" id="presentToday">0</span>
+                                <span class="stat-label">Present Today</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-umbrella-beach"></i>
+                            <div class="stat-info">
+                                <span class="stat-value" id="onLeave">0</span>
+                                <span class="stat-label">On Leave</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Members List -->
+                <div class="team-members">
+                    <div class="members-header">
+                        <h2>Team Members</h2>
+                        <div class="members-filter">
+                            <input type="text" id="searchMembers" placeholder="Search members...">
+                            <select id="statusFilter">
+                                <option value="all">All Status</option>
+                                <option value="present">Present</option>
+                                <option value="absent">Absent</option>
+                                <option value="leave">On Leave</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="members-list" id="membersList">
+                        <!-- Members will be added dynamically -->
+                    </div>
+                </div>
+
+                <!-- Leave Requests Section -->
+                <div class="leave-requests">
+                    <h2>Pending Leave Requests</h2>
+                    <div class="requests-list" id="leaveRequestsList">
+                        <!-- Leave requests will be added dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

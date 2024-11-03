@@ -12,6 +12,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/leave-request.css">
+    <link rel="stylesheet" href="css/components/nav-menu.css">
 </head>
 <body>
     <!-- Include same side menu as index.html -->
@@ -83,5 +84,20 @@
             </div>
         </div>
     </div>
+
+    <!-- Add right after <body> tag -->
+    <div id="navMenu"></div>
+
+    <!-- Add before closing body tag -->
+    <script src="js/components/nav-menu.js"></script>
+    <script>
+        // Load the navigation menu
+        fetch('components/nav-menu.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navMenu').innerHTML = html;
+                new NavigationMenu();
+            });
+    </script>
 </body>
 </html> 

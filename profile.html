@@ -14,12 +14,11 @@
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/components/modal.css">
     <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/nav-menu.css">
 </head>
 <body>
-    <!-- Include same side menu as index.html -->
-    <div class="side-menu" id="sideMenu">
-        <!-- Same side menu content -->
-    </div>
+    <!-- Add right after <body> tag -->
+    <div id="navMenu"></div>
 
     <div class="main-content">
         <div class="container">
@@ -120,5 +119,15 @@
     <script src="js/utils/validation.js"></script>
     <script src="js/utils/notifications.js"></script>
     <script src="js/profile.js"></script>
+    <script src="js/components/nav-menu.js"></script>
+    <script>
+        // Load the navigation menu
+        fetch('components/nav-menu.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navMenu').innerHTML = html;
+                new NavigationMenu();
+            });
+    </script>
 </body>
 </html> 

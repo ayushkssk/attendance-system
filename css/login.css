@@ -1,0 +1,18 @@
+.register-link, .help-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.register-link:hover, .help-link:hover {
+    color: var(--secondary-color);
+    transform: translateY(-1px);
+}
+
+.mt-2 {
+    margin-top: 10px;
+} 
